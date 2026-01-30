@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.toolbar {
+    margin-bottom: 15px;
+}
+
+.toolbar input,
+.toolbar select,
+.toolbar button {
+    margin-right: 8px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* 1 dòng trắng – 1 dòng xám */
+tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+#pagination button {
+    margin: 3px;
+    padding: 5px 10px;
+}

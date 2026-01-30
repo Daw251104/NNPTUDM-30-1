@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Products API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Quản lý Sản phẩm</h1>
+
+    <div class="toolbar">
+        <input type="text" id="search" placeholder="Tìm theo title...">
+
+        <select id="pageSize">
+            <option value="5">5 / trang</option>
+            <option value="10">10 / trang</option>
+            <option value="20">20 / trang</option>
+        </select>
+
+        <button onclick="sortBy('title')">Tên ↑↓</button>
+        <button onclick="sortBy('price')">Giá ↑↓</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ảnh</th>
+                <th>Title</th>
+                <th>Giá</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <div id="pagination"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
